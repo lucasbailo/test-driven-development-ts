@@ -1,46 +1,62 @@
-# Getting Started with Create React App
+## Welcome again to another TypeScript - TDD project! 👋
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Amigo Secreto (Similar to "Secret Santa")!
 
-## Available Scripts
+## Test the project yourself: [Teste the project here!!!](https://test-driven-development-ts.vercel.app/)
 
-In the project directory, you can run:
+### Home Page
 
-### `npm start`
+<img src="./public/HomePage.png" alt="Main page" width="50%">
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Draw lots page 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<img src="./public/sortPage.png" alt="Drag" width="50%">
 
-### `npm test`
+## Draw lots results
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img src="./public/sortResult.png" alt="Filter" width="50%">
 
-### `npm run build`
+## Tests
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img src="./public/tests.png" alt="Debug" width="50%">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Some code that I'm proud of
+```js
+export const listaParticipantesState = atom<string[]>({
+    key: 'listaParticipantesState',
+    default: []
+})
 
-### `npm run eject`
+export const erroState = atom<string>({
+    key: 'erroState',
+    default: ''
+})
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+export const resultadoDoAmigoSecreto = atom<Map<string, string>>({
+    key: 'resultadoDoAmigoSecreto',
+    default: new Map()
+})
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Built with
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- `React`
+- `React Hooks`
+- `TypeScript`
+- `Recoil`
+- `Jest`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## You Can
+- Add names to be drawn;
+- Receive an alert if the name is duplicated;
+- Draw the pairs and find out who each person's Secret Santa is.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Author
+
+- Website - [My GitHub](https://github.com/lucasbailo)
+- Frontend Mentor - [@lucasbailo](https://www.frontendmentor.io/profile/lucasbailo)
+- Instagram - [@lucassbailo](https://www.instagram.com/lucassbailo/)
+- LinkedIn - [Lucas Bailo](https://www.linkedin.com/in/lcsbailo)
